@@ -213,7 +213,19 @@
                     const scrollTop = window.scrollY || document.documentElement.scrollTop;
                     const newCdWidth = cdWidth - scrollTop;
 
+                    // toan tu 3 ngoi
                     cd.style.width = newCdWidth > 0 ? newCdWidth + "px" : 0;
+
+
+                    // if(newCdWidth > 0){
+                    //     cd.style.width = newCdWidth + "px"
+                    // } else {
+                    //     cd.style.width = 0
+
+                    // }
+
+
+
                     cd.style.opacity = newCdWidth / cdWidth;
                 };
 
